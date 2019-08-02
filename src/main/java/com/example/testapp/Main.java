@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.testapp;
 
 import com.example.loadbalancer.*;
 import java.util.Arrays;
