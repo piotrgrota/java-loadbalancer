@@ -2,12 +2,12 @@ package com.example.loadbalancer;
 
 import java.util.List;
 
-class RoudRobinLoadBalance implements LoadBalance {
+class RoundRobinLoadBalance implements LoadBalance {
 
     private int selected = 0;
     private List<Server> servers;
 
-    public RoudRobinLoadBalance(List<Server> servers) {
+    RoundRobinLoadBalance(List<Server> servers) {
         this.servers = servers;
     }
 

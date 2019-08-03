@@ -10,7 +10,7 @@ public class LoadBalancer {
     private final LoadBalance internalBalancer;
     private Map<LoadBalancerType, Function<List<Server>, LoadBalance>> loadBalancers
                 = new HashMap<LoadBalancerType, Function<List<Server>, LoadBalance>>() {{
-        put(LoadBalancerType.ROUND_ROBIN, RoudRobinLoadBalance::new);
+        put(LoadBalancerType.ROUND_ROBIN, RoundRobinLoadBalance::new);
         put(LoadBalancerType.SPECIAL, SpecialLoadBalance::new);
     }};
 

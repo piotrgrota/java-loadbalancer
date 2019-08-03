@@ -8,7 +8,7 @@ class SpecialLoadBalance implements LoadBalance {
     private static final float THRESHOLD = 0.75f;
     private List<Server> servers;
 
-    public SpecialLoadBalance(List<Server> servers) {
+    SpecialLoadBalance(List<Server> servers) {
         this.servers = servers;
     }
 
